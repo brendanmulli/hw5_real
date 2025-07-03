@@ -74,7 +74,7 @@ $(document).ready(function() {
         $('<div>')
             .addClass('tile')
             .attr('data-letter', letter)
-            .css('background-image', `url('../graphics_data/Scrabble_Tiles/Scrabble_Tile_${letter === '_' ? 'Blank' : letter}.jpg')`)
+            .css('background-image', `url('Scrabble_Tiles/Scrabble_Tile_${letter === '_' ? 'Blank' : letter}.jpg')`)
             .draggable({
                 containment: '#game-container',
                 revert: 'invalid',

@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
     min-height: 80px;
-    background-image: url('../graphics_data/scrabble-tile-holder-406774_640.png');
+    background-image: url('scrabble-tile-holder-406774_640.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
