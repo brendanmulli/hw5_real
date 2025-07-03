@@ -1,0 +1,115 @@
+/* Main game container styling */
+#game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Board layout - 7 squares in a row */
+#scrabble-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Individual board square styling */
+.board-square {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #333;
+    margin: 0 5px;
+    position: relative;
+    background-color: #f5f5dc;
+}
+
+/* Special square colors */
+.triple-word { background-color: #c83e4d; }
+.double-word { background-color: #f8a978; }
+.triple-letter { background-color: #07689f; }
+.double-letter { background-color: #a8d8ea; }
+
+/* Bonus square labels */
+.bonus-label {
+    position: absolute;
+    bottom: 2px;
+    font-size: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* Tile rack styling */
+#tile-rack {
+    display: flex;
+    justify-content: center;
+    min-height: 80px;
+    background-image: url('../graphics_data/scrabble-tile-holder-406774_640.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 0;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+/* Individual tile styling */
+.tile {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: move;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #5c2c0c;
+    position: relative;
+}
+
+/* Game controls area */
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Score displays */
+#current-word, #current-score, #word-score {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Tile positioning on board */
+.board-square .tile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dragging visual feedback */
+.ui-draggable-dragging {
+    z-index: 1000;
+    opacity: 0.8;
+}

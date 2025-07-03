@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrabble Game</title>
+    <meta name="author" content="Your Name">
+    <meta name="contact" content="your.email@university.edu">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <!-- Main game container -->
+    <div id="game-container">
+        <h1>Scrabble Game</h1>
+        
+        <!-- Game board with 7 squares -->
+        <div id="scrabble-board">
+            <!-- Each square has position and bonus type data attributes -->
+            <div class="board-square triple-word" data-position="0" data-type="triple-word">
+                <span class="bonus-label">TRIPLE WORD</span>
+            </div>
+            <div class="board-square" data-position="1" data-type="normal"></div>
+            <div class="board-square double-letter" data-position="2" data-type="double-letter">
+                <span class="bonus-label">DOUBLE LETTER</span>
+            </div>
+            <div class="board-square" data-position="3" data-type="normal"></div>
+            <div class="board-square double-word" data-position="4" data-type="double-word">
+                <span class="bonus-label">DOUBLE WORD</span>
+            </div>
+            <div class="board-square" data-position="5" data-type="normal"></div>
+            <div class="board-square triple-letter" data-position="6" data-type="triple-letter">
+                <span class="bonus-label">TRIPLE LETTER</span>
+            </div>
+        </div>
+        
+        <!-- Player's tile rack -->
+        <div id="tile-rack"></div>
+        
+        <!-- Game controls and displays -->
+        <div id="controls">
+            <div id="current-word">Current Word: <span id="word-display"></span></div>
+            <div id="word-score">Word Score: <span id="word-score-display">0</span></div>
+            <div id="current-score">Total Score: <span id="score-display">0</span></div>
+            <button id="submit-word">Submit Word</button>
+            <button id="new-tiles">Get New Tiles</button>
+            <button id="reset-game">Reset Game</button>
+        </div>
+    </div>
+
+    <!-- Main game script -->
+    <script src="scrabble.js"></script>
+</body>
+</html>
